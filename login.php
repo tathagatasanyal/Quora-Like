@@ -17,6 +17,6 @@ $smarty->display("welcome.tpl");
 }
 else
 {
-include('unauth.php');
+header('Location:unauth.php');
 }
 ?>

@@ -49,11 +49,23 @@ have some of genius minds in computer science to guide you.
 <div class="row">
 <div class="col">
 <div class="alert alert-success" role="alert">
-<div align="center">WELCOME TO MY WEBSITE<br></div>
-<?php echo $_POST["username"];?>
+<div align="center">WELCOME TO OUR WEBSITE<br></div>
+<div align="center">NEW USER<br></div>
+<div align="center"><?php echo $_COOKIE["user"];?><br><br></div>
+<div align="left">We will try our best to provide you accurate and easy solution of every question you will post here.<br>We also expect you to provide solutions of the questions you know in our site.<br></div>
+
 </div>
 </div>
 </div>
+
+<div class="row">
+<div class="col">
+<div class="alert alert-info" role="alert">
+<div align="left">To know more about working of site<a href="page2.php" class="wht">...click here.</a><br></div>
+</div>
+</div>
+</div>
+
 <div class="row">
 <a href="about.php" class="col-5 wht">About Me</a>
 <a href="contact.php" class="col-5 wht">Contact Us</a>

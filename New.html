@@ -53,26 +53,27 @@ have some of genius minds in computer science to guide you.
 <div class="row">
 <form class="form-horizontal" role="form"  method="post" action="newusersubmit.php" target="_self">
 <div class="form-group">
-<label class="col-8 control-label">First Name</label> <div class="col-sm-10"> <input class="form-control" type="text" name="firstname">
+<label class="col-8 control-label">First Name</label> <div class="col-sm-10"> <input class="form-control" type="text" name="firstname" required>
 </div></div>
 <div class="form-group">
 <label class="col-8 control-label">Last Name</label> <div class="col-sm-10"> <input class="form-control" type="text" name="lastname">
 </div></div>
 <div class="form-group">
-<label class="col-2 control-label">Email</label> <div class="col-sm-10"> <input class="form-control" id="focusedInput" type="text" name="email">
+<label class="col-2 control-label">Email</label> <div class="col-sm-10"> <input class="form-control" id="emm" type="text" name="email" required>
+<div id="gig2"></div>
 </div></div>
 <div class="form-group">
-<label class="col-2 control-label">Username</label> <div class="col-sm-10"> <input class="form-control" id="xyz" type="text" name="username">
+<label class="col-2 control-label">Username</label> <div class="col-sm-10"> <input class="form-control" id="xyz" type="text" name="username" onfocus="abc1()" required>
 <button type="button" class="btn bg-success btn-sm wht col-8" id="sub1" value="Check Availability" onclick="abc()"> 
 Check Availablity
 </button>
 <div id="gig"></div>
 </div></div>
 <div class="form-group">
-<label class="col-2 control-label">Password</label> <div class="col-sm-10"> <input class="form-control" id="k1" type="password" name="password">
+<label class="col-2 control-label">Password</label> <div class="col-sm-10"> <input class="form-control" id="k1" type="password" name="password" required>
 </div><br>
 <div class="form-group">
-<label class="col-8 control-label">Re-enter Password</label> <div class="col-sm-10"> <input class="form-control" id="k2" type="password" name="cpassword">
+<label class="col-8 control-label">Re-enter Password</label> <div class="col-sm-10"> <input class="form-control" id="k2" type="password" name="cpassword" required>
 <div id="gig1"></div>
 </div>
 </div>
@@ -106,6 +107,10 @@ function abc()
 $("#sub1").click(function(){
 $.post("newavailable.php",{username:$("#xyz").val()},function(data){$("#gig").html(data)});
 });
+}
+function abc1()
+{
+$.post("newemailavailable.php",{email:$("#emm").val()},function(data){$("#gig2").html(data)});
 }
 function abcd()
 {

@@ -35,13 +35,13 @@ $mysqli->close();
 }
 else
 {
-include("unauth.php");
+header('Location:unauth.php');
 exit();
 }
 }
 else 
 {
-include("unauth.php");
+header('Location:unauth.php');
 exit();
 }
 ?>

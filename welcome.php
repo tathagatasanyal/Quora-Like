@@ -1,6 +1,3 @@
-<!doctype htm>
-<html>
-<body>
 <?php 
 require('Smarty.class.php');
 $smarty=new Smarty();
@@ -13,5 +10,3 @@ $smarty->assign("id",$id);
 $smarty->assign("email",$email);
 $smarty->display("welcome.tpl");
 ?>
-</body>
-</html>
