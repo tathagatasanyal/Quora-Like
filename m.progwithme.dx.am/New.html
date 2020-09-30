@@ -1,0 +1,132 @@
+<!doctype html5>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145378502-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145378502-2');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="mystyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="bg-dark">
+<div class=" alert alert-success jumbotron jumbotron-fluid bg-light">
+   <h1 align="center" >PROGWITHME</h1>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+<div class="navbar-header">
+<nav class="navbar navbar-default" role="navigation">
+<div class="navbar-header"> 
+<button type="button" class="btn btn-info navbar-toggle bg-dark" data-toggle="collapse" data-target="#example-navbar-collapse"> 
+<span class="sr-only">Toggle navigation</span> 
+Menu
+</button>
+</div>
+<div class="collapse navbar-collapse" id="example-navbar-collapse">
+<br>
+<ul class="nav navbar-nav"> 
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="index.html"  class="wht">HOME</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.html"  class="wht">SITE REVIEW</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.html"  class="wht">MEMBERS ARENA</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.html"  class="wht">DOWNLOADS</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page5.html"  class="wht">SITE STATUS</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.html"  class="wht">HELP</a></div></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+<div class="row">
+<p align="center">
+<div class="alert alert-info" role="alert">
+This is a forum for discussing about the topics related
+to computer science and engeneering.We can provide you with 
+the solutions related of your homeworks and examination. We 
+have some of genius minds in computer science to guide you.
+</div>
+</p></div>
+</div>
+<div class="alert alert-success" role="alert">
+<div class="row">
+<h2>&nbsp;&nbsp;User Registration<br></h2>
+</div>
+<div class="row">
+<form class="form-horizontal" role="form"  method="post" action="newusersubmit.php" target="_self">
+<div class="form-group">
+<label class="col-8 control-label">First Name</label> <div class="col-sm-10"> <input class="form-control" type="text" name="firstname" required>
+</div></div>
+<div class="form-group">
+<label class="col-8 control-label">Last Name</label> <div class="col-sm-10"> <input class="form-control" type="text" name="lastname">
+</div></div>
+<div class="form-group">
+<label class="col-2 control-label">Email</label> <div class="col-sm-10"> <input class="form-control" id="emm" type="text" name="email" required>
+<div id="gig2"></div>
+</div></div>
+<div class="form-group">
+<label class="col-2 control-label">Username</label> <div class="col-sm-10"> <input class="form-control" id="xyz" type="text" name="username" onfocus="abc1()" required>
+<button type="button" class="btn bg-success btn-sm wht col-8" id="sub1" value="Check Availability" onclick="abc()"> 
+Check Availablity
+</button>
+<div id="gig"></div>
+</div></div>
+<div class="form-group">
+<label class="col-2 control-label">Password</label> <div class="col-sm-10"> <input class="form-control" id="k1" type="password" name="password" required>
+</div><br>
+<div class="form-group">
+<label class="col-8 control-label">Re-enter Password</label> <div class="col-sm-10"> <input class="form-control" id="k2" type="password" name="cpassword" required>
+<div id="gig1"></div>
+</div>
+</div>
+</div>
+<div class="form-group" align="center">
+<button type="submit" class="btn bg-success wht col-8" id="sub" onmouseover="abcd()"> 
+Create
+</button>
+<div class="row">&nbsp;</div>
+<div class="row">
+<a href="New.html" class="text-info col-5 wht">New User?</a>
+<a href="Forgot.html" class="text-info col-7 wht">Forgot Password?</a>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="row">
+<a href="about.html" class="col-5 wht">About Me</a>
+<a href="contact.html" class="col-5 wht">Contact Us</a>
+<a href="faqs.html" class="col-2 wht">FAQs</a>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<script>
+function abc()
+{
+$("#sub1").click(function(){
+$.post("newavailable.php",{username:$("#xyz").val()},function(data){$("#gig").html(data)});
+});
+}
+function abc1()
+{
+$.post("newemailavailable.php",{email:$("#emm").val()},function(data){$("#gig2").html(data)});
+}
+function abcd()
+{
+if($("#k1").val()!=$("#k2").val())
+$("#gig1").html("Password did not matched");
+else
+$("#gig1").html("Password Ok");
+}
+</script>
+</body>
+</html>
