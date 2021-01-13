@@ -26,12 +26,11 @@ Menu
 <div class="collapse navbar-collapse" id="example-navbar-collapse">
 <br>
 <ul class="nav navbar-nav"> 
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="index.html"  class="wht">HOME</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.html"  class="wht">SITE REVIEW</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.html"  class="wht">MEMBERS ARENA</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.html"  class="wht">DOWNLOADS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page5.html"  class="wht">SITE STATUS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.html"  class="wht">HELP</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="welcome.php"  class="wht">HOME</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">PROFILE</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">COMMUNITY</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.php"  class="wht">DOWNLOADS</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE-MAP</a></div></li>
 </ul>
 </div>
 </nav>
@@ -70,9 +69,9 @@ have some of genius minds in computer science to guide you.
 </div>
 </div>
 <div class="row">
-<a href="about.html" class="col-5 wht">About Me</a>
-<a href="contact.html" class="col-5 wht">Contact Us</a>
-<a href="faqs.html" class="col-2 wht">FAQs</a>
+<a href="about.php" class="col-5 wht">About Me</a>
+<a href="contact.php" class="col-5 wht">Contact Us</a>
+<a href="faqs.php" class="col-2 wht">FAQs</a>
 </div>
 </div>
 </body>

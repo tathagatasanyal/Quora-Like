@@ -27,11 +27,10 @@ Menu
 <br>
 <ul class="nav navbar-nav"> 
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="welcome.php"  class="wht">HOME</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE REVIEW</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">MEMBERS ARENA</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">PROFILE</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">COMMUNITY</a></div></li>
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.php"  class="wht">DOWNLOADS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page5.php"  class="wht">SITE STATUS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">HELP</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE-MAP</a></div></li>
 </ul>
 </div>
 </nav>
@@ -51,9 +50,6 @@ have some of genius minds in computer science to guide you.
 <div align="left">
 <h5>We have following pages in our site {$user}.</h5><br><br>
 <h6>HOME:</h6>This is the homepage of site.<br><br>
-</div>
-<div align="left">
-<h6>SITE REVIEW:</h6>The page you are currently viewing.<br><br>
 </div>
 <div align="left">
 <h6>MEMBERS ARENA:</h6>Your account settings.<br><br>

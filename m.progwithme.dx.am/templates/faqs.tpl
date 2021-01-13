@@ -1,15 +1,6 @@
 <!doctype html5>
 <html>
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145378502-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-145378502-2');
-</script>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,11 +28,10 @@ Menu
 <br>
 <ul class="nav navbar-nav"> 
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="welcome.php"  class="wht">HOME</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE REVIEW</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">MEMBERS ARENA</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">PROFILE</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">COMMUNITY</a></div></li>
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.php"  class="wht">DOWNLOADS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page5.php"  class="wht">SITE STATUS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">HELP</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE-MAP</a></div></li>
 </ul>
 </div>
 </nav>
