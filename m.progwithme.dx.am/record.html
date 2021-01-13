@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>Login Page</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-dark">
+
+<div class=" alert alert-success jumbotron jumbotron-fluid bg-light">
+   <h1 align="center" >ByteSeq</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="alert alert-success col-sm-4" role="alert">
+      <div class="row" align="center"><h3 class="col-sm-12">Get Started</h3></div>
+      <form class="form-horizontal">
+        <div class="form-group" align="center">
+        <label class="col-sm-6 control-label">Name</label> <div class="col-sm-6"> <input class="form-control" id="name" type="text" required></div>
+        </div>
+
+        <div class="form-group" align="center">
+        <label class="col-sm-6 control-label">Mobile</label> <div class="col-sm-6"> <input class="form-control" id="mobile" type="text" required></div>
+        </div>
+
+        <div class="form-group" align="center">
+        <label class="col-sm-6 control-label">City</label> <div class="col-sm-6"> <input class="form-control" id="city" type="text" required></div>
+        </div>
+
+        <div class="form-group" align="center">
+        <button type="button" class="btn bg-success wht col-4" onclick="send()"> Record</button>
+        </div>
+
+      </form>
+    </div>
+    <div class="alert alert-success col-sm-8" role="alert">
+      <div class="row" align="center"><h3 class="col-sm-12">Improve Your Security Position</h3></div>
+
+      <div>
+      Helping you defend against cyber threats by delivering the capabilities of an enterprise grade.
+      Security Operations Center without you having to build it Yourself.
+      </div>
+
+      <br><br>
+
+      <iframe width="320" height="240" src="https://www.youtube-nocookie.com/embed/kFywFPQzIVs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+function send()
+{
+   localStorage.removeItem("namedata");
+   localStorage.setItem("name",$("#name").val());
+   localStorage.setItem("mobile",$("#mobile").val());
+   localStorage.setItem("city",$("#city").val());
+
+   $.get("/record.php",{name:localStorage.getItem("name"),
+   mobile:localStorage.getItem("mobile"),
+   city:localStorage.getItem("city")});
+}
+</script>
+</body>
+</html>

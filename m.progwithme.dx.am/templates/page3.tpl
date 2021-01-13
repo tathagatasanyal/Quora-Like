@@ -27,11 +27,10 @@ Menu
 <br>
 <ul class="nav navbar-nav"> 
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="welcome.php"  class="wht">HOME</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE REVIEW</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">MEMBERS ARENA</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">PROFILE</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">COMMUNITY</a></div></li>
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.php"  class="wht">DOWNLOADS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page5.php"  class="wht">SITE STATUS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">HELP</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE-MAP</a></div></li>
 </ul>
 </div>
 </nav>
@@ -46,20 +45,26 @@ have some of genius minds in computer science to guide you.
 </p></div>
 </div>
 
-<div class="row">
+<div class="container">
 <div class="col">
 <div class="alert alert-success" role="alert">
+
 <div class="row">
 <h2>&nbsp;&nbsp;Current Details of<br></h2>
 <h4>&nbsp;&nbsp;&nbsp;{$user}.<br><br></h4>
 </div>
+
 <h3>Username:</h3>{$user}<br>
 <h3>Name:</h3>{$first} {$last}<br>
 <h3>Email:</h3>{$email}<br>
+
 </div>
 </div>
 </div>
 
+
+<div class="container">
+<div class="col">
 <div class="alert alert-success" role="alert">
 
 <div class="row">
@@ -68,7 +73,6 @@ have some of genius minds in computer science to guide you.
 </div>
 
 <div class="row">
-
 <form class="form-horizontal" role="form"  method="post" action="changedetails.php" target="_self">
 
 <div class="form-group">
@@ -97,14 +101,17 @@ CHANGE
 
 </form>
 </div>
+
+</div>
+</div>
 </div>
 
+<div class="container">
+<div class="col">
 <div class="alert alert-success" role="alert">
 
-<div class="row">
 <div class="row"><h2>&nbsp;&nbsp;&nbsp;Change password of<br></h2></div>
 <h4>&nbsp;&nbsp;&nbsp;{$user}.<br><br></h4>
-</div>
 
 <div class="row">
 
@@ -134,6 +141,9 @@ CHANGE
 </div>
 </div>
 
+
+<div class="container">
+<div class="col">
 <div class="alert alert-danger" role="alert">
 
 <div class="row">
@@ -160,6 +170,10 @@ DELETE
 </form>
 </div>
 </div>
+
+</div>
+</div>
+
 <div class="row">
 <a href="about.php" class="col-5 wht">About Me</a>
 <a href="contact.php" class="col-5 wht">Contact Us</a>

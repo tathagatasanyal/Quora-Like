@@ -27,11 +27,10 @@ Menu
 <br>
 <ul class="nav navbar-nav"> 
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="welcome.php"  class="wht">HOME</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE REVIEW</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">MEMBERS ARENA</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page3.php"  class="wht">PROFILE</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">COMMUNITY</a></div></li>
 <li><div class="alert alert-danger bg-dark" role="alert"><a href="page4.php"  class="wht">DOWNLOADS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page5.php"  class="wht">SITE STATUS</a></div></li>
-<li><div class="alert alert-danger bg-dark" role="alert"><a href="page6.php"  class="wht">HELP</a></div></li>
+<li><div class="alert alert-danger bg-dark" role="alert"><a href="page2.php"  class="wht">SITE-MAP</a></div></li>
 </ul>
 </div>
 </nav>
@@ -50,16 +49,16 @@ have some of genius minds in computer science to guide you.
 <div id="carouselExampleIndicators" class="carousel slide" data-interval="500" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block" src="img/img1.jpg" alt="First slide" width="110%" height="20%">
+      <img class="d-block" src="img/pic_1.jpg" alt="First slide" width="100%">
     </div>
     <div class="carousel-item">
-      <img class="d-block" src="img/img2.jpg" alt="Second slide" width="110%" height="20%">
+      <img class="d-block" src="img/pic_2.jpg" alt="Second slide" width="100%">
     </div>
     <div class="carousel-item">
-      <img class="d-block" src="img/img3.jpg" alt="Third slide" width="110%" height="20%">
+      <img class="d-block" src="img/pic_3.jpg" alt="Third slide" width="100%">
     </div>
     <div class="carousel-item">
-      <img class="d-block" src="img/img4.jpg" alt="Third slide" width="110%" height="20%">
+      <img class="d-block" src="img/pic_4.jpg" alt="Third slide" width="100%">
     </div>
   </div>
   <ol class="carousel-indicators">
